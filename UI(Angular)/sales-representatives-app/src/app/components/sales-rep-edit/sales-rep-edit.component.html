@@ -1,0 +1,16 @@
+<div class="edit-form" *ngIf="salesRep">
+  <label>Name:
+    <input type="text" [(ngModel)]="salesRep.name" />
+  </label>
+
+  <label>Region:
+    <input type="text" [(ngModel)]="salesRep.region" />
+  </label>
+
+  <label>Product:
+    <input type="text" [(ngModel)]="salesRep.product" />
+  </label>
+
+
+  <div><button class="button-primary">Save</button></div>
+</div>

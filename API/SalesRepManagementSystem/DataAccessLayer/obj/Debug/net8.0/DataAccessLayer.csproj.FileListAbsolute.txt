@@ -1,0 +1,14 @@
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
+E:\.net_projects\SalesRepManagementSystem\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

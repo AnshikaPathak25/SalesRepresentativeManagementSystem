@@ -1,0 +1,788 @@
+2025-06-01 18:28:33.194 +05:30 [INF] Now listening on: https://localhost:7260
+2025-06-01 18:28:33.524 +05:30 [INF] Now listening on: http://localhost:5145
+2025-06-01 18:28:35.312 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 18:28:35.313 +05:30 [INF] Hosting environment: Development
+2025-06-01 18:28:35.313 +05:30 [INF] Content root path: E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem
+2025-06-01 18:28:46.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-01 18:28:49.988 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 18:28:50.196 +05:30 [INF] Route matched with {action = "GetSalesReps", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesReps() on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:29:08.480 +05:30 [INF] Executed DbCommand (4,256ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn], [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ProductCode], [p].[ProductName], [p].[UpdatedBy], [p].[UpdatedOn], [p0].[PlatformId], [p0].[CreatedBy], [p0].[CreatedOn], [p0].[Name], [p0].[UpdatedBy], [p0].[UpdatedOn], [r].[RegionId], [r].[CreatedBy], [r].[CreatedOn], [r].[Name], [r].[UpdatedBy], [r].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+INNER JOIN [Product] AS [p] ON [s].[ProductId] = [p].[ProductId]
+INNER JOIN [Platform] AS [p0] ON [s].[PlatformId] = [p0].[PlatformId]
+INNER JOIN [Region] AS [r] ON [s].[RegionId] = [r].[RegionId]
+WHERE [s].[SalesRepId] > 0
+2025-06-01 18:29:09.039 +05:30 [INF] Processing sales representative data...
+2025-06-01 18:29:09.080 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessModels.SalesRepresentativeModel, BusinessModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-01 18:29:09.426 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem) in 19210.1212ms
+2025-06-01 18:29:09.427 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 18:29:09.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 200 null application/json; charset=utf-8 22852.9345ms
+2025-06-01 18:29:40.225 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2025-06-01 18:29:41.897 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 1765.9293ms
+2025-06-01 18:29:42.127 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-01 18:29:42.163 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 36.3355ms
+2025-06-01 18:29:42.441 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2025-06-01 18:29:42.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 357.9374ms
+2025-06-01 18:29:45.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2025-06-01 18:29:46.229 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 277.5295ms
+2025-06-01 18:31:21.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-01 18:31:21.336 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 18:31:21.401 +05:30 [INF] Route matched with {action = "GetSalesReps", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesReps() on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:31:24.758 +05:30 [INF] Executed DbCommand (2,738ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn], [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ProductCode], [p].[ProductName], [p].[UpdatedBy], [p].[UpdatedOn], [p0].[PlatformId], [p0].[CreatedBy], [p0].[CreatedOn], [p0].[Name], [p0].[UpdatedBy], [p0].[UpdatedOn], [r].[RegionId], [r].[CreatedBy], [r].[CreatedOn], [r].[Name], [r].[UpdatedBy], [r].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+INNER JOIN [Product] AS [p] ON [s].[ProductId] = [p].[ProductId]
+INNER JOIN [Platform] AS [p0] ON [s].[PlatformId] = [p0].[PlatformId]
+INNER JOIN [Region] AS [r] ON [s].[RegionId] = [r].[RegionId]
+WHERE [s].[SalesRepId] > 0
+2025-06-01 18:31:24.787 +05:30 [INF] Processing sales representative data...
+2025-06-01 18:31:24.800 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessModels.SalesRepresentativeModel, BusinessModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-01 18:31:24.811 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem) in 3408.1669ms
+2025-06-01 18:31:24.811 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 18:31:24.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 200 null application/json; charset=utf-8 3651.6725ms
+2025-06-01 18:33:04.987 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get/1 - null null
+2025-06-01 18:33:05.146 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:33:05.540 +05:30 [INF] Route matched with {action = "GetSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesRep(Int32) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:33:09.109 +05:30 [INF] Executed DbCommand (2,160ms) [Parameters=[@__salesRepId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+WHERE [s].[SalesRepId] = @__salesRepId_0
+2025-06-01 18:33:09.118 +05:30 [INF] Executing ObjectResult, writing value of type 'null'.
+2025-06-01 18:33:09.119 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesRep (SalesRepManagementSystem) in 3577.9122ms
+2025-06-01 18:33:09.119 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:33:09.124 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get/1 - 204 null null 4154.3821ms
+2025-06-01 18:33:38.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get/6 - null null
+2025-06-01 18:33:38.581 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:33:38.581 +05:30 [INF] Route matched with {action = "GetSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesRep(Int32) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:33:40.054 +05:30 [INF] Executed DbCommand (1,217ms) [Parameters=[@__salesRepId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+WHERE [s].[SalesRepId] = @__salesRepId_0
+2025-06-01 18:33:40.077 +05:30 [INF] Executing ObjectResult, writing value of type 'BusinessModels.SalesRepresentativeModel'.
+2025-06-01 18:33:40.295 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesRep (SalesRepManagementSystem) in 1490.312ms
+2025-06-01 18:33:40.296 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:33:40.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get/6 - 200 null application/json; charset=utf-8 1730.6946ms
+2025-06-01 18:54:22.730 +05:30 [INF] Now listening on: https://localhost:7260
+2025-06-01 18:54:22.841 +05:30 [INF] Now listening on: http://localhost:5145
+2025-06-01 18:54:23.217 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 18:54:23.218 +05:30 [INF] Hosting environment: Development
+2025-06-01 18:54:23.218 +05:30 [INF] Content root path: E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem
+2025-06-01 18:54:28.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2025-06-01 18:54:30.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-01 18:54:30.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 2159.9759ms
+2025-06-01 18:54:31.718 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2025-06-01 18:54:31.741 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 1015.6027ms
+2025-06-01 18:54:32.053 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 338.4458ms
+2025-06-01 18:54:32.226 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2025-06-01 18:54:32.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.9928ms
+2025-06-01 18:54:54.790 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-01 18:54:54.916 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 18:54:55.017 +05:30 [INF] Route matched with {action = "GetSalesReps", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesReps() on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:55:08.827 +05:30 [INF] Executed DbCommand (2,980ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn], [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ProductCode], [p].[ProductName], [p].[UpdatedBy], [p].[UpdatedOn], [p0].[PlatformId], [p0].[CreatedBy], [p0].[CreatedOn], [p0].[Name], [p0].[UpdatedBy], [p0].[UpdatedOn], [r].[RegionId], [r].[CreatedBy], [r].[CreatedOn], [r].[Name], [r].[UpdatedBy], [r].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+INNER JOIN [Product] AS [p] ON [s].[ProductId] = [p].[ProductId]
+INNER JOIN [Platform] AS [p0] ON [s].[PlatformId] = [p0].[PlatformId]
+INNER JOIN [Region] AS [r] ON [s].[RegionId] = [r].[RegionId]
+WHERE [s].[SalesRepId] > 0
+2025-06-01 18:55:09.432 +05:30 [INF] Processing sales representative data...
+2025-06-01 18:55:09.451 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessModels.SalesRepresentativeModel, BusinessModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-01 18:55:09.637 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem) in 14534.7261ms
+2025-06-01 18:55:09.639 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 18:55:09.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 200 null application/json; charset=utf-8 14893.4837ms
+2025-06-01 18:55:17.300 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 234
+2025-06-01 18:55:17.320 +05:30 [INF] CORS policy execution failed.
+2025-06-01 18:55:17.320 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 18:55:17.325 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:55:17.352 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:55:21.496 +05:30 [INF] Executed DbCommand (3,471ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 18:55:36.720 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 19367.0295ms
+2025-06-01 18:55:36.725 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:55:36.909 +05:30 [ERR] Unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at RepositoryLayer.Repository.SalesRepRepository.Update(SalesRepresentativeEntity salesRep) in E:\.net_projects\SalesRepManagementSystem\RepositoryLayer\Repository\SalesRepRepository.cs:line 63
+   at BusinessLayer.Service.SalesRepBL.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\BusinessLayer\Service\SalesRepBL.cs:line 104
+   at SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\Controllers\SalesRepController.cs:line 65
+   at lambda_method223(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 18:55:45.067 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 500 null application/json 27768.0126ms
+2025-06-01 18:56:26.033 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 218
+2025-06-01 18:56:26.059 +05:30 [INF] CORS policy execution failed.
+2025-06-01 18:56:26.060 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 18:56:26.061 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:56:26.063 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:56:26.188 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-06-01 18:56:26.311 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 248.0079ms
+2025-06-01 18:56:26.311 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:56:26.312 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 400 null application/problem+json; charset=utf-8 279.4675ms
+2025-06-01 18:56:30.511 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 218
+2025-06-01 18:56:30.514 +05:30 [INF] CORS policy execution failed.
+2025-06-01 18:56:30.514 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 18:56:30.514 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:56:30.514 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:56:30.517 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-06-01 18:56:30.518 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 3.8404ms
+2025-06-01 18:56:30.518 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:56:30.519 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 400 null application/problem+json; charset=utf-8 7.1748ms
+2025-06-01 18:57:23.021 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 255
+2025-06-01 18:57:23.022 +05:30 [INF] CORS policy execution failed.
+2025-06-01 18:57:23.022 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 18:57:23.022 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:57:23.022 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 18:57:24.224 +05:30 [INF] Executed DbCommand (347ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 18:57:40.694 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 17671.0155ms
+2025-06-01 18:57:40.721 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:57:40.779 +05:30 [ERR] Unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at RepositoryLayer.Repository.SalesRepRepository.Update(SalesRepresentativeEntity salesRep) in E:\.net_projects\SalesRepManagementSystem\RepositoryLayer\Repository\SalesRepRepository.cs:line 63
+   at BusinessLayer.Service.SalesRepBL.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\BusinessLayer\Service\SalesRepBL.cs:line 104
+   at SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\Controllers\SalesRepController.cs:line 65
+   at lambda_method223(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 18:57:43.068 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 500 null application/json 20046.4733ms
+2025-06-01 18:59:25.412 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 258
+2025-06-01 18:59:25.458 +05:30 [INF] CORS policy execution failed.
+2025-06-01 18:59:25.458 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 18:59:25.463 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 18:59:25.488 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 19:00:40.293 +05:30 [INF] Executed DbCommand (5,421ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 19:01:57.588 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 152034.272ms
+2025-06-01 19:01:57.657 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 19:01:57.973 +05:30 [ERR] Unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at RepositoryLayer.Repository.SalesRepRepository.Update(SalesRepresentativeEntity salesRep) in E:\.net_projects\SalesRepManagementSystem\RepositoryLayer\Repository\SalesRepRepository.cs:line 63
+   at BusinessLayer.Service.SalesRepBL.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\BusinessLayer\Service\SalesRepBL.cs:line 104
+   at SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\Controllers\SalesRepController.cs:line 65
+   at lambda_method223(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 19:03:05.916 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 500 null application/json 220533.433ms
+2025-06-01 19:05:19.889 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7260/api/SalesRep/delete/6 - null null
+2025-06-01 19:05:19.941 +05:30 [INF] CORS policy execution failed.
+2025-06-01 19:05:19.942 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 19:05:19.954 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.DeleteSalesRep (SalesRepManagementSystem)'
+2025-06-01 19:05:20.138 +05:30 [INF] Route matched with {action = "DeleteSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteSalesRep(Int32) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 19:05:23.816 +05:30 [INF] Executed DbCommand (2,310ms) [Parameters=[@__salesRepId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [s]
+FROM [SalesRepresentative] AS [s]
+WHERE [s].[SalesRepId] = @__salesRepId_0
+2025-06-01 19:05:23.862 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2025-06-01 19:05:23.996 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.DeleteSalesRep (SalesRepManagementSystem) in 3857.2547ms
+2025-06-01 19:05:24.004 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.DeleteSalesRep (SalesRepManagementSystem)'
+2025-06-01 19:05:24.154 +05:30 [ERR] Unhandled exception occurred.
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 204.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.Text.Json.PooledByteBufferWriter.FlushAsync(CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 19:06:07.415 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.HandleExceptionAsync(HttpContext context, Exception exception) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 32
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-01 19:06:07.483 +05:30 [WRN] The response has already started, the error page middleware will not be executed.
+2025-06-01 19:06:07.500 +05:30 [ERR] Connection id "0HND11UFMR92N", Request id "0HND11UFMR92N:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.HandleExceptionAsync(HttpContext context, Exception exception) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 32
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-06-01 19:06:07.584 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7260/api/SalesRep/delete/6 - 204 null application/json; charset=utf-8 47748.6486ms
+2025-06-01 19:06:27.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-01 19:06:27.513 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 19:06:27.513 +05:30 [INF] Route matched with {action = "GetSalesReps", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesReps() on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 19:06:28.396 +05:30 [INF] Executed DbCommand (784ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn], [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ProductCode], [p].[ProductName], [p].[UpdatedBy], [p].[UpdatedOn], [p0].[PlatformId], [p0].[CreatedBy], [p0].[CreatedOn], [p0].[Name], [p0].[UpdatedBy], [p0].[UpdatedOn], [r].[RegionId], [r].[CreatedBy], [r].[CreatedOn], [r].[Name], [r].[UpdatedBy], [r].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+INNER JOIN [Product] AS [p] ON [s].[ProductId] = [p].[ProductId]
+INNER JOIN [Platform] AS [p0] ON [s].[PlatformId] = [p0].[PlatformId]
+INNER JOIN [Region] AS [r] ON [s].[RegionId] = [r].[RegionId]
+WHERE [s].[SalesRepId] > 0
+2025-06-01 19:06:28.409 +05:30 [INF] Processing sales representative data...
+2025-06-01 19:06:28.409 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessModels.SalesRepresentativeModel, BusinessModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-01 19:06:28.416 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem) in 902.4599ms
+2025-06-01 19:06:28.416 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 19:06:28.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 200 null application/json; charset=utf-8 924.6777ms
+2025-06-01 19:07:59.072 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 258
+2025-06-01 19:07:59.076 +05:30 [INF] CORS policy execution failed.
+2025-06-01 19:07:59.076 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 19:07:59.077 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 19:07:59.083 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:03:04.713 +05:30 [INF] Executed DbCommand (4,756ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 20:03:11.192 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 3312112.1792ms
+2025-06-01 20:03:11.203 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:03:11.334 +05:30 [ERR] Unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at RepositoryLayer.Repository.SalesRepRepository.Update(SalesRepresentativeEntity salesRep) in E:\.net_projects\SalesRepManagementSystem\RepositoryLayer\Repository\SalesRepRepository.cs:line 63
+   at BusinessLayer.Service.SalesRepBL.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\BusinessLayer\Service\SalesRepBL.cs:line 104
+   at SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\Controllers\SalesRepController.cs:line 65
+   at lambda_method223(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 20:04:05.306 +05:30 [INF] Now listening on: https://localhost:7260
+2025-06-01 20:04:06.449 +05:30 [INF] Now listening on: http://localhost:5145
+2025-06-01 20:04:08.429 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 20:04:08.430 +05:30 [INF] Hosting environment: Development
+2025-06-01 20:04:08.430 +05:30 [INF] Content root path: E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem
+2025-06-01 20:04:08.598 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2025-06-01 20:04:10.311 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 1698.602ms
+2025-06-01 20:04:10.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-01 20:04:10.318 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2025-06-01 20:04:10.459 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 133.0898ms
+2025-06-01 20:04:10.784 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 466.0981ms
+2025-06-01 20:04:10.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2025-06-01 20:04:11.186 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 179.2867ms
+2025-06-01 20:04:25.610 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 239
+2025-06-01 20:04:25.690 +05:30 [INF] CORS policy execution failed.
+2025-06-01 20:04:25.691 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 20:04:25.859 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:04:26.056 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:07:13.056 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2025-06-01 20:07:14.678 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 1632.5387ms
+2025-06-01 20:07:15.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2025-06-01 20:07:15.455 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-01 20:07:15.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 8.8636ms
+2025-06-01 20:07:15.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.2102ms
+2025-06-01 20:07:17.146 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2025-06-01 20:07:17.233 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.6299ms
+2025-06-01 20:07:26.220 +05:30 [INF] Executed DbCommand (3,611ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 20:07:30.478 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 184408.6645ms
+2025-06-01 20:07:30.484 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:07:30.565 +05:30 [ERR] Unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at RepositoryLayer.Repository.SalesRepRepository.Update(SalesRepresentativeEntity salesRep) in E:\.net_projects\SalesRepManagementSystem\RepositoryLayer\Repository\SalesRepRepository.cs:line 63
+   at BusinessLayer.Service.SalesRepBL.UpdateSalesRep(SalesRepresentativeModel salesRep)
+   at SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\Controllers\SalesRepController.cs:line 65
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 20:07:33.719 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 500 null application/json 188106.6317ms
+2025-06-01 20:09:39.716 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 239
+2025-06-01 20:09:39.950 +05:30 [INF] CORS policy execution failed.
+2025-06-01 20:09:39.950 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 20:09:39.982 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:09:40.418 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:09:56.550 +05:30 [INF] Executed DbCommand (4,452ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 20:09:56.780 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'DataAccessLayer.SalesRepDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_SalesRepresentative_Platform_PlatformId". The conflict occurred in database "SalesRepDB", table "dbo.Platform", column 'PlatformId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:f59362a8-05b0-4294-9b7f-498c056aa0d2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_SalesRepresentative_Platform_PlatformId". The conflict occurred in database "SalesRepDB", table "dbo.Platform", column 'PlatformId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:f59362a8-05b0-4294-9b7f-498c056aa0d2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2025-06-01 20:10:12.561 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 32138.4195ms
+2025-06-01 20:10:12.602 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:10:12.662 +05:30 [ERR] Unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_SalesRepresentative_Platform_PlatformId". The conflict occurred in database "SalesRepDB", table "dbo.Platform", column 'PlatformId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:f59362a8-05b0-4294-9b7f-498c056aa0d2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at RepositoryLayer.Repository.SalesRepRepository.Update(SalesRepresentativeEntity salesRep) in E:\.net_projects\SalesRepManagementSystem\RepositoryLayer\Repository\SalesRepRepository.cs:line 63
+   at BusinessLayer.Service.SalesRepBL.UpdateSalesRep(SalesRepresentativeModel salesRep)
+   at SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\Controllers\SalesRepController.cs:line 65
+   at lambda_method133(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 20:10:38.270 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 500 null application/json 58576.8731ms
+2025-06-01 20:10:41.114 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 239
+2025-06-01 20:10:41.152 +05:30 [INF] CORS policy execution failed.
+2025-06-01 20:10:41.152 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 20:10:41.154 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:10:41.167 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:10:58.440 +05:30 [INF] Executed DbCommand (2,125ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 20:10:58.445 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'DataAccessLayer.SalesRepDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_SalesRepresentative_Platform_PlatformId". The conflict occurred in database "SalesRepDB", table "dbo.Platform", column 'PlatformId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:f59362a8-05b0-4294-9b7f-498c056aa0d2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_SalesRepresentative_Platform_PlatformId". The conflict occurred in database "SalesRepDB", table "dbo.Platform", column 'PlatformId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:f59362a8-05b0-4294-9b7f-498c056aa0d2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2025-06-01 20:11:05.692 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 24525.108ms
+2025-06-01 20:11:05.693 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:11:05.838 +05:30 [ERR] Unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_SalesRepresentative_Platform_PlatformId". The conflict occurred in database "SalesRepDB", table "dbo.Platform", column 'PlatformId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:f59362a8-05b0-4294-9b7f-498c056aa0d2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at RepositoryLayer.Repository.SalesRepRepository.Update(SalesRepresentativeEntity salesRep) in E:\.net_projects\SalesRepManagementSystem\RepositoryLayer\Repository\SalesRepRepository.cs:line 63
+   at BusinessLayer.Service.SalesRepBL.UpdateSalesRep(SalesRepresentativeModel salesRep)
+   at SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep(SalesRepresentativeModel salesRep) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\Controllers\SalesRepController.cs:line 65
+   at lambda_method133(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 20:13:02.393 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 500 null application/json 141217.5608ms
+2025-06-01 20:13:30.110 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7260/api/SalesRep/update - application/json 239
+2025-06-01 20:13:30.181 +05:30 [INF] CORS policy execution failed.
+2025-06-01 20:13:30.189 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 20:13:30.209 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:13:30.562 +05:30 [INF] Route matched with {action = "UpdateSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:14:51.393 +05:30 [INF] Executed DbCommand (2,808ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [SalesRepresentative] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [Email] = @p2, [Name] = @p3, [PhoneNumber] = @p4, [PlatformId] = @p5, [ProductId] = @p6, [RegionId] = @p7, [UpdatedBy] = @p8, [UpdatedOn] = @p9
+OUTPUT 1
+WHERE [SalesRepId] = @p10;
+2025-06-01 20:14:52.123 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2025-06-01 20:14:52.274 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem) in 81711.2627ms
+2025-06-01 20:14:52.280 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.UpdateSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:14:52.305 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7260/api/SalesRep/update - 200 null application/json; charset=utf-8 82198.821ms
+2025-06-01 20:15:07.236 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-01 20:15:07.283 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 20:15:07.307 +05:30 [INF] Route matched with {action = "GetSalesReps", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesReps() on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:15:09.137 +05:30 [INF] Executed DbCommand (149ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn], [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ProductCode], [p].[ProductName], [p].[UpdatedBy], [p].[UpdatedOn], [p0].[PlatformId], [p0].[CreatedBy], [p0].[CreatedOn], [p0].[Name], [p0].[UpdatedBy], [p0].[UpdatedOn], [r].[RegionId], [r].[CreatedBy], [r].[CreatedOn], [r].[Name], [r].[UpdatedBy], [r].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+INNER JOIN [Product] AS [p] ON [s].[ProductId] = [p].[ProductId]
+INNER JOIN [Platform] AS [p0] ON [s].[PlatformId] = [p0].[PlatformId]
+INNER JOIN [Region] AS [r] ON [s].[RegionId] = [r].[RegionId]
+WHERE [s].[SalesRepId] > 0
+2025-06-01 20:15:09.303 +05:30 [INF] Processing sales representative data...
+2025-06-01 20:15:09.304 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessModels.SalesRepresentativeModel, BusinessModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-01 20:15:09.366 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem) in 2059.0642ms
+2025-06-01 20:15:09.367 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 20:15:09.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 200 null application/json; charset=utf-8 2134.6936ms
+2025-06-01 20:15:56.727 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7260/api/SalesRep/add - application/json 242
+2025-06-01 20:15:56.742 +05:30 [INF] CORS policy execution failed.
+2025-06-01 20:15:56.744 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 20:15:56.745 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.AddSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:15:56.777 +05:30 [INF] Route matched with {action = "AddSalesRep", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddSalesRep(BusinessModels.SalesRepresentativeModel) on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:15:57.556 +05:30 [INF] Executed DbCommand (261ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (DbType = Int64), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SalesRepresentative] ([CreatedBy], [CreatedOn], [Email], [Name], [PhoneNumber], [PlatformId], [ProductId], [RegionId], [UpdatedBy], [UpdatedOn])
+OUTPUT INSERTED.[SalesRepId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-06-01 20:15:57.696 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2025-06-01 20:15:57.696 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.AddSalesRep (SalesRepManagementSystem) in 919.4796ms
+2025-06-01 20:15:57.713 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.AddSalesRep (SalesRepManagementSystem)'
+2025-06-01 20:15:57.713 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7260/api/SalesRep/add - 201 null application/json; charset=utf-8 985.8368ms
+2025-06-01 20:16:15.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-01 20:16:15.001 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 20:16:15.001 +05:30 [INF] Route matched with {action = "GetSalesReps", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesReps() on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-01 20:16:15.057 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn], [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ProductCode], [p].[ProductName], [p].[UpdatedBy], [p].[UpdatedOn], [p0].[PlatformId], [p0].[CreatedBy], [p0].[CreatedOn], [p0].[Name], [p0].[UpdatedBy], [p0].[UpdatedOn], [r].[RegionId], [r].[CreatedBy], [r].[CreatedOn], [r].[Name], [r].[UpdatedBy], [r].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+INNER JOIN [Product] AS [p] ON [s].[ProductId] = [p].[ProductId]
+INNER JOIN [Platform] AS [p0] ON [s].[PlatformId] = [p0].[PlatformId]
+INNER JOIN [Region] AS [r] ON [s].[RegionId] = [r].[RegionId]
+WHERE [s].[SalesRepId] > 0
+2025-06-01 20:16:15.059 +05:30 [INF] Processing sales representative data...
+2025-06-01 20:16:15.059 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessModels.SalesRepresentativeModel, BusinessModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-01 20:16:15.059 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem) in 58.3102ms
+2025-06-01 20:16:15.059 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-01 20:16:15.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 200 null application/json; charset=utf-8 59.9844ms
+2025-06-01 21:31:07.056 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 21:31:08.805 +05:30 [INF] Now listening on: https://localhost:7260
+2025-06-01 21:31:08.807 +05:30 [INF] Now listening on: http://localhost:5145
+2025-06-01 21:31:09.438 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 21:31:09.439 +05:30 [INF] Hosting environment: Development
+2025-06-01 21:31:09.440 +05:30 [INF] Content root path: E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem
+2025-06-01 23:48:19.513 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 23:48:20.513 +05:30 [INF] Now listening on: https://localhost:7260
+2025-06-01 23:48:20.515 +05:30 [INF] Now listening on: http://localhost:5145
+2025-06-01 23:48:20.925 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 23:48:20.926 +05:30 [INF] Hosting environment: Development
+2025-06-01 23:48:20.926 +05:30 [INF] Content root path: E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem
+2025-06-01 23:48:23.926 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2025-06-01 23:48:24.903 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 1033.3691ms
+2025-06-01 23:48:25.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-01 23:48:25.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2025-06-01 23:48:25.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 57.374ms
+2025-06-01 23:48:25.480 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 470.0293ms
+2025-06-01 23:48:26.246 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2025-06-01 23:48:26.338 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.4493ms
+2025-06-01 23:50:47.017 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-01 23:50:49.914 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-01 23:50:49.920 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-01 23:50:49.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 401 0 null 2904.1398ms
+2025-06-01 23:51:05.817 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - application/json 59
+2025-06-01 23:51:05.847 +05:30 [INF] CORS policy execution failed.
+2025-06-01 23:51:05.847 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-01 23:51:05.864 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-01 23:51:05.945 +05:30 [INF] Route matched with {action = "Authenticate", controller = "AuthAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(BusinessModels.LoginModel) on controller SalesRepManagementSystem.Controllers.AuthAPIController (SalesRepManagementSystem).
+2025-06-01 23:51:05.963 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem) in 10.7184ms
+2025-06-01 23:51:05.966 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-01 23:51:06.131 +05:30 [ERR] Unhandled exception occurred.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLayer.IService.IUserBL' while attempting to activate 'SalesRepManagementSystem.Controllers.AuthAPIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-01 23:51:13.163 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - 500 null application/json 7346.4931ms

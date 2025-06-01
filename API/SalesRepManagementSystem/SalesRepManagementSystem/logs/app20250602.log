@@ -1,0 +1,122 @@
+2025-06-02 00:00:36.977 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - application/json 51
+2025-06-02 00:00:37.347 +05:30 [INF] CORS policy execution failed.
+2025-06-02 00:00:37.348 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-02 00:00:37.459 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:00:37.497 +05:30 [INF] Route matched with {action = "Authenticate", controller = "AuthAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(BusinessModels.LoginModel) on controller SalesRepManagementSystem.Controllers.AuthAPIController (SalesRepManagementSystem).
+2025-06-02 00:00:37.540 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem) in 19.657ms
+2025-06-02 00:00:37.549 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:00:37.740 +05:30 [ERR] Unhandled exception occurred.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLayer.IService.IUserBL' while attempting to activate 'SalesRepManagementSystem.Controllers.AuthAPIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-02 00:01:05.281 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - 500 null application/json 28315.8682ms
+2025-06-02 00:01:29.499 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - application/json 51
+2025-06-02 00:01:29.510 +05:30 [INF] CORS policy execution failed.
+2025-06-02 00:01:29.513 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-02 00:01:29.515 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:01:29.515 +05:30 [INF] Route matched with {action = "Authenticate", controller = "AuthAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(BusinessModels.LoginModel) on controller SalesRepManagementSystem.Controllers.AuthAPIController (SalesRepManagementSystem).
+2025-06-02 00:01:29.518 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem) in 1.9683ms
+2025-06-02 00:01:29.519 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:01:29.600 +05:30 [ERR] Unhandled exception occurred.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLayer.IService.IUserBL' while attempting to activate 'SalesRepManagementSystem.Controllers.AuthAPIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at SalesRepManagementSystem.GlobalExceptionHandler.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem\GlobalExceptionHandler\ExceptionMiddleware.cs:line 21
+2025-06-02 00:01:49.209 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - 500 null application/json 19710.9138ms
+2025-06-02 00:04:46.864 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-02 00:04:47.948 +05:30 [INF] Now listening on: https://localhost:7260
+2025-06-02 00:04:47.949 +05:30 [INF] Now listening on: http://localhost:5145
+2025-06-02 00:04:48.266 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-02 00:04:48.269 +05:30 [INF] Hosting environment: Development
+2025-06-02 00:04:48.269 +05:30 [INF] Content root path: E:\.net_projects\SalesRepManagementSystem\SalesRepManagementSystem
+2025-06-02 00:04:51.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2025-06-02 00:04:52.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 1166.9028ms
+2025-06-02 00:04:52.534 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-02 00:04:52.545 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2025-06-02 00:04:52.559 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 23.8057ms
+2025-06-02 00:04:52.911 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 366.4561ms
+2025-06-02 00:04:53.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2025-06-02 00:04:53.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.7929ms
+2025-06-02 00:05:31.329 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - application/json 51
+2025-06-02 00:05:31.377 +05:30 [INF] CORS policy execution failed.
+2025-06-02 00:05:31.378 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-02 00:05:31.791 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:05:31.876 +05:30 [INF] Route matched with {action = "Authenticate", controller = "AuthAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(BusinessModels.LoginModel) on controller SalesRepManagementSystem.Controllers.AuthAPIController (SalesRepManagementSystem).
+2025-06-02 00:05:49.171 +05:30 [INF] Executed DbCommand (2,846ms) [Parameters=[@__ToLower_0='?' (Size = 50) (DbType = AnsiString), @__pwd_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[EmailId], [u].[FullName], [u].[Password], [u].[Role]
+FROM [User] AS [u]
+WHERE LOWER([u].[EmailId]) = @__ToLower_0 AND [u].[Password] = @__pwd_1
+2025-06-02 00:05:49.904 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-02 00:05:49.930 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem) in 18045.9158ms
+2025-06-02 00:05:49.930 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:05:49.997 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - 200 null application/json; charset=utf-8 18669.7945ms
+2025-06-02 00:06:18.682 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-02 00:06:18.736 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-02 00:06:18.753 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-02 00:06:18.753 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7260/api/SalesRep/get - 401 0 null 70.8928ms
+2025-06-02 00:23:54.145 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-02 00:23:54.388 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-02 00:23:54.394 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-02 00:23:54.420 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7260/api/SalesRep/get - 401 0 null 298.4017ms
+2025-06-02 00:24:07.608 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-02 00:24:08.080 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '6/1/2025 6:35:54 PM', Current time (UTC): '6/1/2025 6:54:08 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-06-02 00:24:08.434 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '6/1/2025 6:35:54 PM', Current time (UTC): '6/1/2025 6:54:08 PM'.
+2025-06-02 00:24:08.459 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-02 00:24:08.466 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-02 00:24:08.467 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7260/api/SalesRep/get - 401 0 null 864.2705ms
+2025-06-02 00:24:24.224 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - application/json 51
+2025-06-02 00:24:24.242 +05:30 [INF] CORS policy execution failed.
+2025-06-02 00:24:24.242 +05:30 [INF] Request origin https://localhost:7260 does not have permission to access the resource.
+2025-06-02 00:24:24.247 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:24:24.303 +05:30 [INF] Route matched with {action = "Authenticate", controller = "AuthAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(BusinessModels.LoginModel) on controller SalesRepManagementSystem.Controllers.AuthAPIController (SalesRepManagementSystem).
+2025-06-02 00:24:36.628 +05:30 [INF] Executed DbCommand (3,096ms) [Parameters=[@__ToLower_0='?' (Size = 50) (DbType = AnsiString), @__pwd_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[EmailId], [u].[FullName], [u].[Password], [u].[Role]
+FROM [User] AS [u]
+WHERE LOWER([u].[EmailId]) = @__ToLower_0 AND [u].[Password] = @__pwd_1
+2025-06-02 00:24:36.723 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-02 00:24:36.736 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem) in 12429.9845ms
+2025-06-02 00:24:36.738 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.AuthAPIController.Authenticate (SalesRepManagementSystem)'
+2025-06-02 00:24:36.741 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7260/api/AuthAPI/auth - 200 null application/json; charset=utf-8 12517.932ms
+2025-06-02 00:24:58.680 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7260/api/SalesRep/get - null null
+2025-06-02 00:24:58.760 +05:30 [INF] Executing endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-02 00:24:58.826 +05:30 [INF] Route matched with {action = "GetSalesReps", controller = "SalesRep"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetSalesReps() on controller SalesRepManagementSystem.Controllers.SalesRepController (SalesRepManagementSystem).
+2025-06-02 00:25:00.496 +05:30 [INF] Executed DbCommand (964ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalesRepId], [s].[CreatedBy], [s].[CreatedOn], [s].[Email], [s].[Name], [s].[PhoneNumber], [s].[PlatformId], [s].[ProductId], [s].[RegionId], [s].[UpdatedBy], [s].[UpdatedOn], [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ProductCode], [p].[ProductName], [p].[UpdatedBy], [p].[UpdatedOn], [p0].[PlatformId], [p0].[CreatedBy], [p0].[CreatedOn], [p0].[Name], [p0].[UpdatedBy], [p0].[UpdatedOn], [r].[RegionId], [r].[CreatedBy], [r].[CreatedOn], [r].[Name], [r].[UpdatedBy], [r].[UpdatedOn]
+FROM [SalesRepresentative] AS [s]
+INNER JOIN [Product] AS [p] ON [s].[ProductId] = [p].[ProductId]
+INNER JOIN [Platform] AS [p0] ON [s].[PlatformId] = [p0].[PlatformId]
+INNER JOIN [Region] AS [r] ON [s].[RegionId] = [r].[RegionId]
+WHERE [s].[SalesRepId] > 0
+2025-06-02 00:25:00.770 +05:30 [INF] Processing sales representative data...
+2025-06-02 00:25:00.771 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusinessModels.SalesRepresentativeModel, BusinessModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-02 00:25:00.866 +05:30 [INF] Executed action SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem) in 2039.5607ms
+2025-06-02 00:25:00.866 +05:30 [INF] Executed endpoint 'SalesRepManagementSystem.Controllers.SalesRepController.GetSalesReps (SalesRepManagementSystem)'
+2025-06-02 00:25:00.870 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7260/api/SalesRep/get - 200 null application/json; charset=utf-8 2186.9089ms

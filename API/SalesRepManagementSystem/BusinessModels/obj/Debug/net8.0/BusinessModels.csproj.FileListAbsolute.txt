@@ -1,0 +1,11 @@
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\bin\Debug\net8.0\BusinessModels.deps.json
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\bin\Debug\net8.0\BusinessModels.dll
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\bin\Debug\net8.0\BusinessModels.pdb
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\BusinessModels.GeneratedMSBuildEditorConfig.editorconfig
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\BusinessModels.AssemblyInfoInputs.cache
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\BusinessModels.AssemblyInfo.cs
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\BusinessModels.csproj.CoreCompileInputs.cache
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\BusinessModels.dll
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\refint\BusinessModels.dll
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\BusinessModels.pdb
+E:\.net_projects\SalesRepManagementSystem\BusinessModels\obj\Debug\net8.0\ref\BusinessModels.dll

@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "SalesRepManagementSystem.Controllers.AuthAPIController",
+    "Method": "Authenticate",
+    "RelativePath": "api/AuthAPI/auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginViewModel",
+        "Type": "BusinessModels.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesRepManagementSystem.Controllers.SalesRepController",
+    "Method": "AddSalesRep",
+    "RelativePath": "api/SalesRep/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salesRep",
+        "Type": "BusinessModels.SalesRepresentativeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesRepManagementSystem.Controllers.SalesRepController",
+    "Method": "DeleteSalesRep",
+    "RelativePath": "api/SalesRep/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesRepManagementSystem.Controllers.SalesRepController",
+    "Method": "GetSalesReps",
+    "RelativePath": "api/SalesRep/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesRepManagementSystem.Controllers.SalesRepController",
+    "Method": "GetSalesRep",
+    "RelativePath": "api/SalesRep/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesRepManagementSystem.Controllers.SalesRepController",
+    "Method": "UpdateSalesRep",
+    "RelativePath": "api/SalesRep/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salesRep",
+        "Type": "BusinessModels.SalesRepresentativeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

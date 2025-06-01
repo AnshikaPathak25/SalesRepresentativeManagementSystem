@@ -1,0 +1,75 @@
+
+<div class="row">
+<div class="col-lg-12, col-sm-12">
+<div class="card">
+<div class="card-header">
+  Sales Representatives List
+</div>
+<div class="card-body">
+
+<div class="filters">
+  <label  style="padding-right: 20px;">Sales Representative
+ <input class="form-control" 
+       id="salesRepList" 
+       placeholder="Type to search..." 
+       [(ngModel)]="searchText" 
+       (input)="applyFilters()">
+  </label>
+  <label  style="padding-right: 20px;">Product
+    <select class="form-select" [(ngModel)]="filters.product" (change)="applyFilters()">
+      <option value="">All</option>
+      <option value="Product A">Product A</option>
+      <option value="Product B">Product B</option>
+      <option value="Product C">Product C</option>
+      <option value="Product D">Product D</option>
+    </select>
+  </label>
+     
+  <label style="padding-right: 20px;">Region
+    <select class="form-select" [(ngModel)]="filters.region" (change)="applyFilters()">
+      <option value="">All</option>
+      <option value="East">East</option>
+      <option value="West">West</option>
+      <option value="North">North</option>
+      <option value="South">South</option>
+    </select>
+  </label>
+  <label>Sales Performance
+    <select class="form-select" [(ngModel)]="filters.salesPerformance" (change)="applyFilters()">
+      <option value="">All</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+  </label>
+  </div>
+  <div style="height: 20px;"></div>
+  <table  class="table table-striped table-bordered border-primary">
+    <thead >
+      <th>Sales Represtative Name</th>
+      <th>Platform</th>
+      <th>Region</th>
+      <th>Product</th>
+      <th>Sales Performance</th>
+      <th></th>
+      <th></th>
+    </thead><tbody>
+    <tr *ngFor="let rep of filteredReps">
+      <td><a [routerLink]="['/View', rep.id]">{{ rep.name }}</a></td>
+      <td> {{rep.platform}}</td>
+      <td> {{ rep.region }}  </td>
+      <td> {{ rep.product }}  </td>
+      <td> {{ rep?.salesPerformance || 'Low' }}   </td>
+      <td><a style="padding-right: 10px;" [routerLink]="['/edit', rep.id]">Edit</a>
+      <a [routerLink]="['/delete', rep.id]">Delete</a></td>
+    </tr>
+    </tbody>
+  </table>
+  <div style="height: 20px;"></div>
+   <a href="#" class="btn btn-primary">Add Sales Representative</a>
+  </div>
+  </div>
+  </div>
+</div>
+
+  

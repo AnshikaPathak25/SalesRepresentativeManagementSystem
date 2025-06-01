@@ -1,0 +1,473 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\.net_projects\\SalesRepManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|e:\\.net_projects\\salesrepmanagementsystem\\salesrepmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|solutionrelative:salesrepmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|e:\\.net_projects\\salesrepmanagementsystem\\salesrepmanagementsystem\\globalexceptionhandler\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|solutionrelative:salesrepmanagementsystem\\globalexceptionhandler\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|e:\\.net_projects\\salesrepmanagementsystem\\salesrepmanagementsystem\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|solutionrelative:salesrepmanagementsystem\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|e:\\.net_projects\\salesrepmanagementsystem\\salesrepmanagementsystem\\controllers\\salesrepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|solutionrelative:salesrepmanagementsystem\\controllers\\salesrepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|e:\\.net_projects\\salesrepmanagementsystem\\salesrepmanagementsystem\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|solutionrelative:salesrepmanagementsystem\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|e:\\.net_projects\\salesrepmanagementsystem\\salesrepmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|solutionrelative:salesrepmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\businesslayer\\service\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\dataaccesslayer\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\repositorylayer\\irepository\\isalesreprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\irepository\\isalesreprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\repositorylayer\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|e:\\.net_projects\\salesrepmanagementsystem\\salesrepmanagementsystem\\salesrepmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7155B75D-C2A7-415B-BA92-F393EFE8585D}|SalesRepManagementSystem\\SalesRepManagementSystem.csproj|solutionrelative:salesrepmanagementsystem\\salesrepmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\repositorylayer\\repository\\salesreprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repository\\salesreprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\repositorylayer\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\businesslayer\\iservice\\iuserbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\iservice\\iuserbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD6D74C-CC1A-44D6-94C5-74A5D3742425}|BusinessModels\\BusinessModels.csproj|e:\\.net_projects\\salesrepmanagementsystem\\businessmodels\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD6D74C-CC1A-44D6-94C5-74A5D3742425}|BusinessModels\\BusinessModels.csproj|solutionrelative:businessmodels\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD6D74C-CC1A-44D6-94C5-74A5D3742425}|BusinessModels\\BusinessModels.csproj|e:\\.net_projects\\salesrepmanagementsystem\\businessmodels\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD6D74C-CC1A-44D6-94C5-74A5D3742425}|BusinessModels\\BusinessModels.csproj|solutionrelative:businessmodels\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\businesslayer\\service\\salesrepbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\salesrepbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\dataaccesslayer\\entities\\salesrepresentativeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\salesrepresentativeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD6D74C-CC1A-44D6-94C5-74A5D3742425}|BusinessModels\\BusinessModels.csproj|e:\\.net_projects\\salesrepmanagementsystem\\businessmodels\\salesrepresentativemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD6D74C-CC1A-44D6-94C5-74A5D3742425}|BusinessModels\\BusinessModels.csproj|solutionrelative:businessmodels\\salesrepresentativemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\dataaccesslayer\\entities\\salesperformanceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\salesperformanceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\dataaccesslayer\\entities\\platformentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\platformentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\dataaccesslayer\\entities\\regionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\regionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\dataaccesslayer\\entities\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Migrations\\20250530181331_Create_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20250530181331_Create_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\repositorylayer\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\repositorylayer\\repository\\regionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1019E92-0EAE-4884-A5F7-F63BA27C465F}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repository\\regionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\businesslayer\\iservice\\isalesrepbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017BB048-1D67-4751-99A4-DB0D448E7D25}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\iservice\\isalesrepbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|e:\\.net_projects\\salesrepmanagementsystem\\dataaccesslayer\\migrations\\20250531184523_migration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50C0A25E-0237-4D07-A261-75D9787C54F7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20250531184523_migration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "SalesRepManagementSystem\\Program.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\Program.cs*",
+              "RelativeToolTip": "SalesRepManagementSystem\\Program.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T13:11:43.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SalesRepManagementSystem\\appsettings.Development.json",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\appsettings.Development.json",
+              "RelativeToolTip": "SalesRepManagementSystem\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-30T13:22:19.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SalesRepController.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\Controllers\\SalesRepController.cs",
+              "RelativeDocumentMoniker": "SalesRepManagementSystem\\Controllers\\SalesRepController.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\Controllers\\SalesRepController.cs",
+              "RelativeToolTip": "SalesRepManagementSystem\\Controllers\\SalesRepController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:03:22.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\GlobalExceptionHandler\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "SalesRepManagementSystem\\GlobalExceptionHandler\\ExceptionMiddleware.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\GlobalExceptionHandler\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "SalesRepManagementSystem\\GlobalExceptionHandler\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwB0AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T12:26:09.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthAPIController.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\Controllers\\AuthAPIController.cs",
+              "RelativeDocumentMoniker": "SalesRepManagementSystem\\Controllers\\AuthAPIController.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\Controllers\\AuthAPIController.cs",
+              "RelativeToolTip": "SalesRepManagementSystem\\Controllers\\AuthAPIController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:00:56.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "SalesRepManagementSystem\\appsettings.json",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\appsettings.json",
+              "RelativeToolTip": "SalesRepManagementSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-30T13:22:07.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repository\\UserRepository.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:19:12.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\UserEntity.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:17:24.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserBL.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\Service\\UserBL.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\UserBL.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\Service\\UserBL.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\UserBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:02:24.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ISalesRepRepository.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\IRepository\\ISalesRepRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\IRepository\\ISalesRepRepository.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\IRepository\\ISalesRepRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\IRepository\\ISalesRepRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T09:26:11.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SalesRepManagementSystem.csproj",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\SalesRepManagementSystem.csproj",
+              "RelativeDocumentMoniker": "SalesRepManagementSystem\\SalesRepManagementSystem.csproj",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\SalesRepManagementSystem\\SalesRepManagementSystem.csproj",
+              "RelativeToolTip": "SalesRepManagementSystem\\SalesRepManagementSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-01T15:23:42.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SalesRepRepository.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\SalesRepRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repository\\SalesRepRepository.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\SalesRepRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repository\\SalesRepRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwCkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:24:31.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\IRepository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:16:24.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessModels\\UserModel.cs",
+              "RelativeDocumentMoniker": "BusinessModels\\UserModel.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessModels\\UserModel.cs",
+              "RelativeToolTip": "BusinessModels\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:06:39.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessModels\\LoginModel.cs",
+              "RelativeDocumentMoniker": "BusinessModels\\LoginModel.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessModels\\LoginModel.cs",
+              "RelativeToolTip": "BusinessModels\\LoginModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:07:39.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUserBL.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\IService\\IUserBL.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\IService\\IUserBL.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\IService\\IUserBL.cs",
+              "RelativeToolTip": "BusinessLayer\\IService\\IUserBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:03:48.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SalesRepBL.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\Service\\SalesRepBL.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\SalesRepBL.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\Service\\SalesRepBL.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\SalesRepBL.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAvwFgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:40:11.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SalesRepresentativeEntity.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\SalesRepresentativeEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\SalesRepresentativeEntity.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\SalesRepresentativeEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\SalesRepresentativeEntity.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA8wB8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:31:59.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SalesRepresentativeModel.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessModels\\SalesRepresentativeModel.cs",
+              "RelativeDocumentMoniker": "BusinessModels\\SalesRepresentativeModel.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessModels\\SalesRepresentativeModel.cs",
+              "RelativeToolTip": "BusinessModels\\SalesRepresentativeModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:25:36.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250531184523_migration2.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Migrations\\20250531184523_migration2.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20250531184523_migration2.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Migrations\\20250531184523_migration2.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20250531184523_migration2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:45:24.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SalesPerformanceEntity.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\SalesPerformanceEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\SalesPerformanceEntity.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\SalesPerformanceEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\SalesPerformanceEntity.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvxAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T18:20:34.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PlatformEntity.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\PlatformEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\PlatformEntity.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\PlatformEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\PlatformEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T18:24:36.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegionEntity.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\RegionEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\RegionEntity.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\RegionEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\RegionEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:43:17.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductEntity.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\ProductEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\ProductEntity.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Entities\\ProductEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\ProductEntity.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:42:54.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250530181331_Create_initial.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Migrations\\20250530181331_Create_initial.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20250530181331_Create_initial.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\DataAccessLayer\\Migrations\\20250530181331_Create_initial.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20250530181331_Create_initial.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T18:13:32.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repository\\ProductRepository.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repository\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:24:52.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RegionRepository.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\RegionRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repository\\RegionRepository.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\RepositoryLayer\\Repository\\RegionRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repository\\RegionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:25:14.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ISalesRepBL.cs",
+              "DocumentMoniker": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\IService\\ISalesRepBL.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\IService\\ISalesRepBL.cs",
+              "ToolTip": "E:\\.net_projects\\SalesRepManagementSystem\\BusinessLayer\\IService\\ISalesRepBL.cs",
+              "RelativeToolTip": "BusinessLayer\\IService\\ISalesRepBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:36:03.176Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
